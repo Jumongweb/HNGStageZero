@@ -13,9 +13,9 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**") // Allow all endpoints
-                        .allowedOrigins("*") // Allow requests from any origin
-                        .allowedMethods("GET") // Allow only GET requests
+                registry.addMapping("/**")
+                        .allowedOrigins("*")
+                        .allowedMethods("GET")
                         .allowedHeaders("*");
             }
         };
