@@ -4,7 +4,4 @@ services:
     env: docker
     plan: free
     buildCommand: "docker build -t hngstagezero ."
-    startCommand: "docker run -p 2025:2025 hngstagezero"
-    envVars:
-      - key: JAVA_HOME
-        value: /opt/render/project/.jdk
+    startCommand: "docker run -2025:2025 hngstagezero"
