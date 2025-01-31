@@ -14,13 +14,13 @@ public class InformationController {
     @GetMapping("info")
     public InformationResponse getInfo(){
         String email = "lawaltoheeb36@gmail.com";
-        String currentTime = Instant.now().toString();
-        String githubUrl = "https://github.com/Jumongweb/hng-stagezero";
+        String current_time = Instant.now().toString();
+        String github_url = "https://github.com/Jumongweb/HNGStageZero";
 
         InformationResponse informationResponse = new InformationResponse();
         informationResponse.setEmail(email);
-        informationResponse.setCurrentTime(currentTime);
-        informationResponse.setGithubUrl(githubUrl);
+        informationResponse.setCurrentTime(current_time);
+        informationResponse.setGithubUrl(github_url);
         return informationResponse;
     }
 
