@@ -13,5 +13,5 @@ FROM openjdk:17
 #ENV DATABASE_PASSWORD=${DATABASE_PASSWORD}
 
 COPY --from=build target/*.jar hngstagezero.jar
-
-ENTRYPOINT ["java", "-jar", "-Dserver.port=8080", "hngstagezero.jar"]
+EXPOSE 2025
+ENTRYPOINT ["java", "-jar", "-Dserver.port=2025", "hngstagezero.jar"]
