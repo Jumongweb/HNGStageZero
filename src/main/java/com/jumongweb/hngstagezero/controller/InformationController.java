@@ -10,7 +10,7 @@ import java.time.Instant;
 @RestController
 @RequestMapping("/api")
 public class InformationController {
-    // one
+
     @GetMapping("info")
     public InformationResponse getInfo(){
         String email = "lawaltoheeb36@gmail.com";
